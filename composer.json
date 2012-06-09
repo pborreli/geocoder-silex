@@ -1,0 +1,8 @@
+{
+    "require": {
+        "silex/silex": "1.0.*",
+        "willdurand/geocoder": "1.0.*",
+        "kriswallsmith/buzz": "dev-master",
+        "twig/twig": "1.8.*"
+    }
+}

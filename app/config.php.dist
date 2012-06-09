@@ -1,0 +1,9 @@
+<?php
+
+// application debug mode
+$app['debug'] = true;
+
+$app['IPINFODB_API_KEY'] = '';
+$app['YAHOO_API_KEY'] = '';
+$app['CLOUDMADE_API_KEY'] = '';
+$app['BINGMAPS_API_KEY'] = '';
