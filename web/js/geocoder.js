@@ -8,7 +8,9 @@ $(function () {
         bing_maps:{color:'orange'},
         google_maps:{color:'red'},
         cloudmade:{color:'yellow'},
-        openstreetmaps:{color:'green'}
+        openstreetmaps:{color:'green'},
+        data_science_toolkit:{color:'darkgreen'},
+        geoip: {color:'paleblue'}
 };
     $('#gmap').gmap3({zoom:3});
     $('form').on('submit', function (event) {
