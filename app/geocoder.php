@@ -37,8 +37,8 @@ $app->post('/', function () use ($app) {
             new \Geocoder\Provider\GoogleMapsProvider($adapter),
             new \Geocoder\Provider\OpenStreetMapsProvider($adapter),
             new \Geocoder\Provider\YahooProvider($adapter, $app['YAHOO_API_KEY']),
-            new \Geocoder\Provider\GeocoderCaProvider($adapter),
-            new \Geocoder\Provider\GeocoderUsProvider($adapter),
+            //new \Geocoder\Provider\GeocoderCaProvider($adapter),
+            //new \Geocoder\Provider\GeocoderUsProvider($adapter),
             new \Geocoder\Provider\MapQuestProvider($adapter),
             new \Geocoder\Provider\OIORestProvider($adapter),
             new \Geocoder\Provider\IGNOpenLSProvider($adapter)

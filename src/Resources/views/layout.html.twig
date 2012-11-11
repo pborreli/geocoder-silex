@@ -11,13 +11,8 @@
     <![endif]-->
 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/css/geocoder.css" rel="stylesheet">
-
-    <link rel="shortcut icon" type="image/x-icon" href="assets/ico/favicon.ico">
-    <link rel="apple-touch-icon" href="assets/ico/bootstrap-apple-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/bootstrap-apple-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/bootstrap-apple-114x114.png">
 </head>
 
 <body>
@@ -31,9 +26,9 @@
                 <span class="icon-bar"></span>
             </a>
             <a class="brand" href="#">Geocoder</a>
-
-            <form class="pull-left">
-                <input type="text" id="q" placeholder="IP or Address">
+            <form class="navbar-form pull-left">
+                <input type="text" id="q" class="span2" placeholder="IP or Address">
+                <button type="submit" class="btn">Geocode</button>
             </form>
             <div class="nav-collapse collapse">
                 <ul class="nav">
