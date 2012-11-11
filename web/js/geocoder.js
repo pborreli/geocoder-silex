@@ -1,18 +1,18 @@
 $(function () {
 
     var providers = {
-        free_geo_ip: {color:'blue'},
-        host_ip: {color:'brown'},
-        ip_info_db: {color:'purple'},
+        free_geo_ip:{color:'blue'},
+        host_ip:{color:'brown'},
+        ip_info_db:{color:'purple'},
         yahoo:{color:'pink'},
         bing_maps:{color:'orange'},
-        map_quest: {color:'paleblue'},
+        map_quest:{color:'paleblue'},
         google_maps:{color:'red'},
         cloudmade:{color:'yellow'},
         openstreetmaps:{color:'green'},
         data_science_toolkit:{color:'darkgreen'},
-        geoip: {color:'blue'}
-};
+        geoip:{color:'blue'}
+    };
     $('#gmap').gmap3({zoom:3});
     $('form').on('submit', function (event) {
         event.preventDefault();
@@ -34,7 +34,7 @@ $(function () {
                             options:{
                                 draggable:false,
                                 animation:google.maps.Animation.DROP,
-                                icon:'/images/markers/'+providers[provider].color+'_Marker' + provider.charAt(0).toUpperCase() + '.png'
+                                icon:'/images/markers/' + providers[provider].color + '_Marker' + provider.charAt(0).toUpperCase() + '.png'
                             },
                             events:{
                                 mouseover:function (marker, event, data) {
@@ -61,8 +61,8 @@ $(function () {
                                 action:'addRectangle',
                                 options:{
                                     bounds:[result['bounds']['north'], result['bounds']['east'], result['bounds']['south'], result['bounds']['west']],
-                                    fillColor: providers[provider].color,
-                                    strokeColor: providers[provider].color,
+                                    fillColor:providers[provider].color,
+                                    strokeColor:providers[provider].color,
                                     clickable:true
                                 },
                                 events:{
