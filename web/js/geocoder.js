@@ -6,11 +6,12 @@ $(function () {
         ip_info_db: {color:'purple'},
         yahoo:{color:'pink'},
         bing_maps:{color:'orange'},
+        map_quest: {color:'paleblue'},
         google_maps:{color:'red'},
         cloudmade:{color:'yellow'},
         openstreetmaps:{color:'green'},
         data_science_toolkit:{color:'darkgreen'},
-        geoip: {color:'paleblue'}
+        geoip: {color:'blue'}
 };
     $('#gmap').gmap3({zoom:3});
     $('form').on('submit', function (event) {
