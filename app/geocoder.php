@@ -41,7 +41,7 @@ $app->post('/', function () use ($app) {
             //new \Geocoder\Provider\GeocoderUsProvider($adapter),
             new \Geocoder\Provider\MapQuestProvider($adapter),
             //new \Geocoder\Provider\OIORestProvider($adapter),
-            new \Geocoder\Provider\IGNOpenLSProvider($adapter)
+            //new \Geocoder\Provider\IGNOpenLSProvider($adapter)
         );
     }
 
