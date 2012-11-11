@@ -26,7 +26,9 @@ $app->post('/', function () use ($app) {
             new \Geocoder\Provider\FreeGeoIpProvider($adapter),
             new \Geocoder\Provider\HostIpProvider($adapter),
             new \Geocoder\Provider\IpInfoDbProvider($adapter, $app['IPINFODB_API_KEY']),
-            new \Geocoder\Provider\YahooProvider($adapter, $app['YAHOO_API_KEY'])
+            new \Geocoder\Provider\YahooProvider($adapter, $app['YAHOO_API_KEY']),
+            new \Geocoder\Provider\GeoipProvider(),
+            new \Geocoder\Provider\DataScienceToolkitProvider($adapter)
         );
     } else {
         $providers = array(
@@ -34,7 +36,12 @@ $app->post('/', function () use ($app) {
             new \Geocoder\Provider\CloudMadeProvider($adapter, $app['CLOUDMADE_API_KEY']),
             new \Geocoder\Provider\GoogleMapsProvider($adapter),
             new \Geocoder\Provider\OpenStreetMapsProvider($adapter),
-            new \Geocoder\Provider\YahooProvider($adapter, $app['YAHOO_API_KEY'])
+            new \Geocoder\Provider\YahooProvider($adapter, $app['YAHOO_API_KEY']),
+            new \Geocoder\Provider\GeocoderCaProvider($adapter),
+            new \Geocoder\Provider\GeocoderUsProvider($adapter),
+            new \Geocoder\Provider\MapQuestProvider($adapter),
+            new \Geocoder\Provider\OIORestProvider($adapter),
+            new \Geocoder\Provider\IGNOpenLSProvider($adapter)
         );
     }
 
