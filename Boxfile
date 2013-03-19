@@ -1,0 +1,11 @@
+web1:
+    document_root: web
+ 
+    php_extensions:
+        - apc
+        - zip
+        - curl
+ 
+    after_build:
+        - "curl -s http://getcomposer.org/installer | php"
+        - "php composer.phar install --no-progress -o --prefer-dist"
