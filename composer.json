@@ -1,4 +1,5 @@
 {
+    "description": "A simple Silex app to demonstrate and test geocoder-php returns",
     "license": "MIT",
     "require": {
         "silex/silex": "1.0.*",
