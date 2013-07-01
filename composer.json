@@ -1,4 +1,5 @@
 {
+    "name": "pborreli/geocoder-silex",
     "description": "A simple Silex app to demonstrate and test geocoder-php returns",
     "license": "MIT",
     "require": {
