@@ -4,7 +4,7 @@
     "license": "MIT",
     "require": {
         "silex/silex": "1.0.*",
-        "willdurand/geocoder": "~2.0.0",
+        "willdurand/geocoder": "~2.4",
         "kriswallsmith/buzz": "v0.10",
         "twig/twig": ">=1.8.0,<2.0-dev"
     },
